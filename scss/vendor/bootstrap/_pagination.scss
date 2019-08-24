@@ -28,11 +28,6 @@
       outline: $pagination-focus-outline;
       box-shadow: $pagination-focus-box-shadow;
     }
-
-    // Opinionated: add "hand" cursor to non-disabled .page-link elements
-    &:not(:disabled):not(.disabled) {
-      cursor: pointer;
-    }
   }
 
   .page-item {
@@ -42,7 +37,6 @@
         @include border-left-radius($border-radius);
       }
     }
-
     &:last-child {
       .page-link {
         @include border-right-radius($border-radius);

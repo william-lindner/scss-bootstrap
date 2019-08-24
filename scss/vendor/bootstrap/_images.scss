@@ -33,13 +33,12 @@
   }
 
   .figure-img {
-    margin-bottom: ($spacer / 2);
+    margin-bottom: $spacer / 2;
     line-height: 1;
   }
 
   .figure-caption {
-    font-size: $figure-caption-font-size;
+    @include font-size($figure-caption-font-size);
     color: $figure-caption-color;
   }
-
 }

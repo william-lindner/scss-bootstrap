@@ -1,5 +1,4 @@
 @if map-get($bootstrap, 'grid') {
-
   // Container widths
   //
   // Set the container width, and override it for fixed navbars in media queries.
@@ -52,5 +51,4 @@
   @if $enable-grid-classes {
     @include make-grid-columns();
   }
-
 }

@@ -28,6 +28,8 @@ $bootstrap: (
     'tooltip': false,
     'popover': false,
     'carousel': false,
+    'spinners': false,
+    'toasts': false,
     'utilities': (
         'align': false,
         'background': false,
@@ -42,6 +44,10 @@ $bootstrap: (
         'spacing': false,
         'text': false,
         'visibility': false,
+        'clearfix': false,
+        'float': false,
+        'overflow': false,
+        'stretched-link': false
     ),
     'print': false,
 );

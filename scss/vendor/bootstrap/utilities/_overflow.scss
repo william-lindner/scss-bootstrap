@@ -1,0 +1,7 @@
+@if map-deep-get($bootstrap, 'utilities', 'overflow') {
+  @each $value in $overflows {
+    .overflow-#{$value} {
+      overflow: $value !important;
+    }
+  }
+}

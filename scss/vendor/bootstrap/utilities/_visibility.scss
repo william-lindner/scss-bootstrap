@@ -1,15 +1,13 @@
-
 @if map-deep-get($bootstrap, 'utilities', 'visibility') {
-
   //
   // Visibility utilities
   //
 
   .visible {
-    @include invisible(visible);
+    visibility: visible !important;
   }
 
   .invisible {
-    @include invisible(hidden);
+    visibility: hidden !important;
   }
 }
