@@ -30,6 +30,7 @@ $bootstrap: (
     'carousel': false,
     'spinners': false,
     'toasts': false,
+    'print': false,
     'utilities': (
         'align': false,
         'background': false,
@@ -48,6 +49,5 @@ $bootstrap: (
         'float': false,
         'overflow': false,
         'stretched-link': false
-    ),
-    'print': false,
+    )
 );
