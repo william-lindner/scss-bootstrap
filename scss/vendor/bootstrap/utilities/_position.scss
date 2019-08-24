@@ -1,37 +1,42 @@
 // stylelint-disable declaration-no-important
 
-// Common values
+@if map-deep-get($bootstrap, 'utilities', 'position') {
 
-// Sass list not in variables since it's not intended for customization.
-// stylelint-disable-next-line scss/dollar-variable-default
-$positions: static, relative, absolute, fixed, sticky;
+  // Common values
 
-@each $position in $positions {
-  .position-#{$position} { position: $position !important; }
-}
+  // Sass list not in variables since it's not intended for customization.
+  // stylelint-disable-next-line scss/dollar-variable-default
+  $positions: static, relative, absolute, fixed, sticky;
 
-// Shorthand
+  @each $position in $positions {
+    .position-#{$position} {
+      position: $position !important;
+    }
+  }
 
-.fixed-top {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: $zindex-fixed;
-}
+  // Shorthand
 
-.fixed-bottom {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: $zindex-fixed;
-}
-
-.sticky-top {
-  @supports (position: sticky) {
-    position: sticky;
+  .fixed-top {
+    position: fixed;
     top: 0;
-    z-index: $zindex-sticky;
+    right: 0;
+    left: 0;
+    z-index: $zindex-fixed;
+  }
+
+  .fixed-bottom {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: $zindex-fixed;
+  }
+
+  .sticky-top {
+    @supports (position: sticky) {
+      position: sticky;
+      top: 0;
+      z-index: $zindex-sticky;
+    }
   }
 }

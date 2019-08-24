@@ -1,19 +1,21 @@
 // stylelint-disable declaration-no-important
+@if map-deep-get($bootstrap, 'utilities', 'background') {
 
-@each $color, $value in $theme-colors {
-  @include bg-variant(".bg-#{$color}", $value);
-}
-
-@if $enable-gradients {
   @each $color, $value in $theme-colors {
-    @include bg-gradient-variant(".bg-gradient-#{$color}", $value);
+    @include bg-variant(".bg-#{$color}", $value);
   }
-}
 
-.bg-white {
-  background-color: $white !important;
-}
+  @if $enable-gradients {
+    @each $color, $value in $theme-colors {
+      @include bg-gradient-variant(".bg-gradient-#{$color}", $value);
+    }
+  }
 
-.bg-transparent {
-  background-color: transparent !important;
+  .bg-white {
+    background-color: $white !important;
+  }
+
+  .bg-transparent {
+    background-color: transparent !important;
+  }
 }

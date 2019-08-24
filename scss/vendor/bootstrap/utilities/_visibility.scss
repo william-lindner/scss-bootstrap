@@ -1,11 +1,15 @@
-//
-// Visibility utilities
-//
 
-.visible {
-  @include invisible(visible);
-}
+@if map-deep-get($bootstrap, 'utilities', 'visibility') {
 
-.invisible {
-  @include invisible(hidden);
+  //
+  // Visibility utilities
+  //
+
+  .visible {
+    @include invisible(visible);
+  }
+
+  .invisible {
+    @include invisible(hidden);
+  }
 }

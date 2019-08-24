@@ -35,7 +35,21 @@ $bootstrap: (
     'tooltip': true,
     'popover': true,
     'carousel': true,
-    'utilities': true,
+    'utilities': (
+      'align': true,
+      'background': true,
+      'borders': true,
+      'display': true,
+      'embed': true,
+      'flex': true,
+      'position': true,
+      'screenreaders': true,
+      'shadows': true,
+      'sizing': true,
+      'spacing': true,
+      'text': true,
+      'visibility': true,
+    ),
     'print': true,
 ) !default;
 
