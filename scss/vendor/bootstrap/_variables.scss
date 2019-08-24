@@ -35,6 +35,7 @@ $bootstrap: (
     'carousel': true,
     'spinners': true,
     'toasts': true,
+    'print': true,
     'utilities': (
         'align': true,
         'background': true,
@@ -53,8 +54,7 @@ $bootstrap: (
         'float': true,
         'overflow': true,
         'stretched-link': true
-    ),
-    'print': true,
+    )
 ) !default;
 
 // Color system
