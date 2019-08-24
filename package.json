@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "node-sass scss/main.scss dist/main.css --error-bell",
+    "build": "node-sass scss/main.scss dist/main.css",
+    "watch": "node-sass scss/main.scss dist/main.css --watch --error-bell",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
